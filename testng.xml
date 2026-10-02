@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="sanity"></include>
+  			<include name="smoke"></include>
+  			
+  		</run>
+  	</groups>
+  
+   <classes>
+	  <class name="FrontEndAutomation.TC_01_loginTest"/>
+	  <class name="FrontEndAutomation.TC_02_SearchProjects"/>
+	  <class name="FrontEndAutomation.TC_03_AddtoCardProduct"/>
+	  <class name="FrontEndAutomation.TC_04_RemoveProductFromCart"/>
+	  <class name="FrontEndAutomation.TC_05_updateQuantityFromCart"/>
+	  <class name="FrontEndAutomation.TC_06_checkoutProducts"/>
+      <class name="FrontEndAutomation.TC_07_AddProductToWishlist"/>
+      <class name="FrontEndAutomation.TC_08_removeProductFromWishlist"/>
+      <class name="FrontEndAutomation.TC_09_AddToCartProductFromWishList"/>
+      <class name="FrontEndAutomation.TC_10_contactUsPage"/>
+      <class name="FrontEndAutomation.TC_11_WriteAnReviewForProduct"/>
+    </classes>
+    
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
