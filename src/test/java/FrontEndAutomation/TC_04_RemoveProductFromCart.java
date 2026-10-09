@@ -1,23 +1,17 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_04_RemoveProductFromCart {
-	
-	WebDriver driver;
+public class TC_04_RemoveProductFromCart extends BaseClass_openCart{
+
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.get("http://opencart.localhost/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
+	void setupTest() {
+		setup();
 	}
+	
 	
 	@Test(groups= {"functionality", "regression"})
 	void removePrdFromCart() throws InterruptedException {
@@ -36,13 +30,17 @@ public class TC_04_RemoveProductFromCart {
 		CartPage cartvar = new CartPage(driver);
 		cartvar.clickHeaderCartOption();
 		
+		Thread.sleep(2000);
+		
+		
 		cartvar.clickRemovePrdFromCart();
 		Thread.sleep(2000);
 		
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	@AfterClass
-	void tearDown() {
-		driver.quit();
+	void teardownTest() {
+		teardown();
 	}
 }

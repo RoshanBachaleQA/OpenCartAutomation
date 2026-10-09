@@ -1,23 +1,19 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_05_updateQuantityFromCart {
-	
-	WebDriver driver;
+public class TC_05_updateQuantityFromCart extends BaseClass_openCart{
+
 	@BeforeClass
-	void Setup() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("http://opencart.localhost/");
-		driver.manage().window().maximize();
+	void setupTest() {
+		setup();
 	}
+	
+	
 	
 	@Test(groups= {"functionality"})
 	void updateQuantityOfPrdFromCart() throws InterruptedException {
@@ -42,11 +38,13 @@ public class TC_05_updateQuantityFromCart {
 		cartvar.updateQuantityFromCart("22");
 		Thread.sleep(1000);
 		cartvar.clickUpdateButtonFromCart();
+		
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	@AfterClass
-	void tearDown() {
-		driver.quit();
-		System.out.println("***  Test Ended  ****");
+	void teardownTest() {
+		teardown();
 	}
 }

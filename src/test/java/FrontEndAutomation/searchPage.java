@@ -22,7 +22,7 @@ public class searchPage {
 	
 	//Action Methods
 	
-	public List<WebElement> ClickProductLinks() {
+	public List<WebElement> getProductLinks() {
 		return driver.findElements(productLinks);
 	}
 	

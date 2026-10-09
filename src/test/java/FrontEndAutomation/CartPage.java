@@ -19,7 +19,9 @@ public class CartPage {
 	
 	By headerCart = By.linkText("Shopping Cart"); //header locator
 	
-	By removePrdLocFromCart = By.xpath("//a[contains(@data-bs-original-title,'Remove')]");
+//	By removePrdLocFromCart = By.xpath("//a[contains(@data-bs-original-title,'Remove')]");
+	By removePrdLocFromCart = By.xpath("//*[@id='output-cart']//form//a");
+	
 	By updateQuantityFieldFromCart = By.xpath("//input[@name='quantity']");
 	By updatePrdButtonFromCart = By.xpath("//button[@aria-label='Update' or @type='submit']");
 	

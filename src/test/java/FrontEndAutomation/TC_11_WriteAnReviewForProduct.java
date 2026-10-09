@@ -1,36 +1,27 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
+
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_11_WriteAnReviewForProduct {
-
-	
-	WebDriver driver;
+public class TC_11_WriteAnReviewForProduct extends BaseClass_openCart{
 	
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("http://opencart.localhost/");
-		driver.manage().window().maximize();
-		
-		HomePageOC homepagevar=new HomePageOC(driver);
-		homepagevar.clickHeaderMyAccount();
-		
+	void setupTest() {
+		setup();
 	}
-	
 	
 	@Test(groups= {"functionality"})
 	void searchProducts() throws InterruptedException {
+		HomePageOC homepagevar=new HomePageOC(driver);
+		homepagevar.clickHeaderMyAccount();
+		
+		
 		loginPageOC login=new loginPageOC(driver);
 		login.clickLoginPopup();
 		login.setEmail("roshanbachale328@gmail.com");
@@ -43,7 +34,7 @@ public class TC_11_WriteAnReviewForProduct {
 		homevar.homepageSearchButton();
 		
 		searchPage searchprdvar = new searchPage(driver);
-		List<WebElement> links = searchprdvar.ClickProductLinks();
+		List<WebElement> links = searchprdvar.getProductLinks();
 		
 		
 		for(WebElement prdlink: links) {
@@ -70,13 +61,14 @@ public class TC_11_WriteAnReviewForProduct {
 		
 		reviewvar.clickOnContinueButton();
 		
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	
 	@AfterClass
-	void tearDown() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.quit();
+	void teardownTest() {
+		teardown();
 	}
 
 	

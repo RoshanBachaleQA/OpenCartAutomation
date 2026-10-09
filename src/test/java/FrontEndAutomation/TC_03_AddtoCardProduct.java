@@ -1,31 +1,22 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
+
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_03_AddtoCardProduct {
+public class TC_03_AddtoCardProduct extends BaseClass_openCart{
 
-	
-	WebDriver driver;
 	
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("http://opencart.localhost/");
-		driver.manage().window().maximize();
-
-
-		
+	void setupTest() {
+		setup();
 	}
+	
 	
 	
 	@Test(groups= {"sanity", "regression", "smoke"})
@@ -46,7 +37,7 @@ public class TC_03_AddtoCardProduct {
 		homevar.homepageSearchButton();
 		
 		searchPage searchprdvar = new searchPage(driver);
-		List<WebElement> links = searchprdvar.ClickProductLinks();
+		List<WebElement> links = searchprdvar.getProductLinks();
 		
 		
 		
@@ -66,14 +57,14 @@ public class TC_03_AddtoCardProduct {
 		cartvar.clearInputFieldQuantitySeachPrd();
 		cartvar.clickSendQuantityFromSearchedPrd("15");
 		cartvar.clickAddToCartButtomFromSearchedPrd();
-		
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	
 	@AfterClass
-	void tearDown() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.quit();
+	void teardownTest() {
+		teardown();
 	}
 
 	

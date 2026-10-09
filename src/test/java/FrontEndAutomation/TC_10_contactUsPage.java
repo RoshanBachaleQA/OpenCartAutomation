@@ -1,23 +1,15 @@
 package FrontEndAutomation;
 
 import java.io.IOException;
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_10_contactUsPage {
-	WebDriver driver;
-	
+public class TC_10_contactUsPage extends BaseClass_openCart{
+
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.get("http://opencart.localhost/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
+	void setupTest() {
+		setup();
 	}
 	
 	@Test(groups= {"functionality"})
@@ -43,11 +35,13 @@ public class TC_10_contactUsPage {
 		contactusvar.clickSubmitButtonFromContactUS();
 		
 		Thread.sleep(5000);
+		
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	@AfterClass
-	void tearDown() {
-		driver.quit();
-		System.out.println("Test Ended");
+	void teardownTest() {
+		teardown();
 	}
 }

@@ -5,9 +5,9 @@
     <classes>
       <class name="FrontEndAutomation.TC_11_WriteAnReviewForProduct">
         <methods>
-          <include name="tearDown"/>
+          <include name="setupTest"/>
+          <include name="teardownTest"/>
           <include name="searchProducts"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- FrontEndAutomation.TC_11_WriteAnReviewForProduct -->
     </classes>

@@ -16,7 +16,8 @@ public class checkoutPage {
 	
 	By paymentMethodloc = By.id("button-payment-methods");
 	By orderComment = By.id("input-comment");
-	By confirmOrderButton = By.linkText("Confirm Order");
+//	By confirmOrderButton = By.linkText("Confirm Order");
+	By confirmOrderButton = By.xpath("//button[@type='button'][@class='btn btn-primary']");
 	
 	//Action methods
 	public void clickCheckoutFromMenu() {

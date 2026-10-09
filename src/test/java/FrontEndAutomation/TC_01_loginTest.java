@@ -1,33 +1,25 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_01_loginTest {
-	WebDriver driver;
+public class TC_01_loginTest extends BaseClass_openCart {
+
 	
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("http://opencart.localhost/");
-		driver.manage().window().maximize();
-		
-		HomePageOC homepagevar = new HomePageOC(driver);
-		homepagevar.clickHeaderMyAccount();
-        
-        
+	void setupTest() {
+		setup();
 	}
 	
 	
 	@Test(groups={"smoke", "sanity", "regression", "functionality"})
-	void login() {
+	void loginTest() {
+		HomePageOC homepagevar = new HomePageOC(driver);
+		homepagevar.clickHeaderMyAccount();
+		
+		
 		loginPageOC lg = new loginPageOC(driver);
 		lg.clickLoginPopup();
 		lg.setEmail("roshanbachale328@gmail.com");
@@ -35,12 +27,14 @@ public class TC_01_loginTest {
 		lg.clickLogin();
 		
 		Assert.assertEquals(driver.getTitle(), "Account Login");
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	
 	@AfterClass
-	void teardown() {
-		driver.quit();
+	void teardownTest() {
+		teardown();
 	}
 	
 }

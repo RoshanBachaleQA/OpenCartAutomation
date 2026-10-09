@@ -9,8 +9,7 @@ import org.openqa.selenium.WebElement;
 public class HomePageOC {
 	
 	WebDriver driver;
-	
-	//Chrome driver
+
 	HomePageOC(WebDriver driver){
 		this.driver=driver;
 	}

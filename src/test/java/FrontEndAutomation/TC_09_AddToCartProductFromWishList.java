@@ -1,23 +1,14 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_09_AddToCartProductFromWishList {
+public class TC_09_AddToCartProductFromWishList extends BaseClass_openCart{
 
-	WebDriver driver;
-	
 	@BeforeClass
-	void setup() {
-		driver = new ChromeDriver();
-		driver.get("http://opencart.localhost/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
+	void setupTest() {
+		setup();
 	}
 	
 	@Test(groups= {"functionality"})
@@ -42,12 +33,13 @@ public class TC_09_AddToCartProductFromWishList {
 		wishlistvar.clickAddToCartFromWishList();
 		Thread.sleep(2000);
 		
+
+		System.out.println("-------------  Test Ended  -------------");
 	}
 	
 	@AfterClass
-	void tearDown() {
-		driver.quit();
-		System.out.println("Test Ended");
+	void teardownTest() {
+		teardown();
 	}
 	
 }

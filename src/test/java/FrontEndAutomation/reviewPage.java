@@ -35,7 +35,7 @@ public class reviewPage {
 	public void provideReview(String review) throws InterruptedException {
 		WebElement reviewdis=driver.findElement(reviewDescription);
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(false);", reviewdis);
+		js.executeScript("arguments[0].scrollIntoView();", reviewdis);
 		Thread.sleep(1000);
 		
 		reviewdis.sendKeys(review);
@@ -46,7 +46,7 @@ public class reviewPage {
 			Thread.sleep(2000);
 			WebElement worst = driver.findElement(reviewRatingRadioButtons1);
 			JavascriptExecutor js=(JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(false);", worst);
+			js.executeScript("arguments[0].scrollIntoView();", worst);
 			worst.click();
 			
 		}
@@ -54,28 +54,28 @@ public class reviewPage {
 			Thread.sleep(2000);
 			WebElement good =driver.findElement(reviewRatingRadioButtons2);
 			JavascriptExecutor js=(JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(false);", good);
+			js.executeScript("arguments[0].scrollIntoView();", good);
 			good.click();
 			
 		}else if(no==3) {
 			Thread.sleep(2000);
 			WebElement better = driver.findElement(reviewRatingRadioButtons3);
 			JavascriptExecutor js=(JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(false);", better);
+			js.executeScript("arguments[0].scrollIntoView();", better);
 			better.click();
 			
 		}else if(no==4) {
 			Thread.sleep(2000);
 			WebElement best = driver.findElement(reviewRatingRadioButtons4);
 			JavascriptExecutor js=(JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(false);", best);
+			js.executeScript("arguments[0].scrollIntoView();", best);
 			best.click();
 			
 		}else if(no == 5) {
 			Thread.sleep(2000);
 			WebElement excellent = driver.findElement(reviewRatingRadioButtons5);
 			JavascriptExecutor js=(JavascriptExecutor) driver;
-			js.executeScript("arguments[0].scrollIntoView(false);", excellent);
+			js.executeScript("arguments[0].scrollIntoView();", excellent);
 			excellent.click();
 			
 		}else {
@@ -89,7 +89,7 @@ public class reviewPage {
 		Thread.sleep(2000);
 		WebElement continueButton = driver.findElement(continueButtonLoc);
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(false);", continueButton);
+		js.executeScript("arguments[0].scrollIntoView();", continueButton);
 		
 		continueButton.click();
 	}
