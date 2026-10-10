@@ -18,11 +18,7 @@ public class TC_06_checkoutProducts extends BaseClass_openCart {
 		HomePageOC homepagevar = new HomePageOC(driver);
 		homepagevar.clickHeaderMyAccount();
 		
-		loginPageOC login=new loginPageOC(driver);
-		login.clickLoginPopup();
-		login.setEmail("roshanbachale328@gmail.com");
-		login.setPassword("Pass@1234$");
-		login.clickLogin();
+		login("roshanbachale328@gmail.com", "Pass@1234$");
 		
 		Thread.sleep(2000);
 		

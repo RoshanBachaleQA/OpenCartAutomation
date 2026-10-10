@@ -19,11 +19,7 @@ public class TC_04_RemoveProductFromCart extends BaseClass_openCart{
 		HomePageOC homepagevar = new HomePageOC(driver);
 		homepagevar.clickHeaderMyAccount();
 		
-		loginPageOC lg = new loginPageOC(driver);
-		lg.clickLoginPopup();
-		lg.setEmail("roshanbachale328@gmail.com");
-		lg.setPassword("Pass@1234$");
-		lg.clickLogin();
+		login("roshanbachale328@gmail.com", "Pass@1234$");
 		
 		Thread.sleep(1000);
 		

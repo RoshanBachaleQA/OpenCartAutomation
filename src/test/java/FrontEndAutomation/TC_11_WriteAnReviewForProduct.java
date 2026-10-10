@@ -20,13 +20,10 @@ public class TC_11_WriteAnReviewForProduct extends BaseClass_openCart{
 	void searchProducts() throws InterruptedException {
 		HomePageOC homepagevar=new HomePageOC(driver);
 		homepagevar.clickHeaderMyAccount();
+	
+		login("roshanbachale328@gmail.com", "Pass@1234$");
 		
-		
-		loginPageOC login=new loginPageOC(driver);
-		login.clickLoginPopup();
-		login.setEmail("roshanbachale328@gmail.com");
-		login.setPassword("Pass@1234$");
-		login.clickLogin();
+		Thread.sleep(1000);
 		
 		HomePageOC homevar=new HomePageOC(driver);
 		homevar.moveToHomePage();

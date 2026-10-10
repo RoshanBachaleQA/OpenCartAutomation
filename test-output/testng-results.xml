@@ -1,192 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-09T16:06:21 IST" name="Suite" finished-at="2026-10-09T16:07:26 IST" duration-ms="65110">
+  <suite started-at="2026-10-10T21:04:04 IST" name="Default suite" finished-at="2026-10-10T21:04:19 IST" duration-ms="15030">
     <groups>
-      <group name="regression">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
-        <method signature="TC_02_SearchProjects.searchProducts()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" name="searchProducts" class="FrontEndAutomation.TC_02_SearchProjects"/>
-        <method signature="TC_03_AddtoCardProduct.searchProducts()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" name="searchProducts" class="FrontEndAutomation.TC_03_AddtoCardProduct"/>
-        <method signature="TC_04_RemoveProductFromCart.removePrdFromCart()[pri:0, instance:FrontEndAutomation.TC_04_RemoveProductFromCart@3fc2959f]" name="removePrdFromCart" class="FrontEndAutomation.TC_04_RemoveProductFromCart"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
-        <method signature="TC_02_SearchProjects.searchProducts()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" name="searchProducts" class="FrontEndAutomation.TC_02_SearchProjects"/>
-        <method signature="TC_03_AddtoCardProduct.searchProducts()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" name="searchProducts" class="FrontEndAutomation.TC_03_AddtoCardProduct"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
-        <method signature="TC_02_SearchProjects.searchProducts()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" name="searchProducts" class="FrontEndAutomation.TC_02_SearchProjects"/>
-        <method signature="TC_03_AddtoCardProduct.searchProducts()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" name="searchProducts" class="FrontEndAutomation.TC_03_AddtoCardProduct"/>
-      </group> <!-- sanity -->
       <group name="functionality">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
-        <method signature="TC_04_RemoveProductFromCart.removePrdFromCart()[pri:0, instance:FrontEndAutomation.TC_04_RemoveProductFromCart@3fc2959f]" name="removePrdFromCart" class="FrontEndAutomation.TC_04_RemoveProductFromCart"/>
-        <method signature="TC_05_updateQuantityFromCart.updateQuantityOfPrdFromCart()[pri:0, instance:FrontEndAutomation.TC_05_updateQuantityFromCart@2f4948e4]" name="updateQuantityOfPrdFromCart" class="FrontEndAutomation.TC_05_updateQuantityFromCart"/>
-        <method signature="TC_06_checkoutProducts.checkoutproducts()[pri:0, instance:FrontEndAutomation.TC_06_checkoutProducts@1f2586d6]" name="checkoutproducts" class="FrontEndAutomation.TC_06_checkoutProducts"/>
-        <method signature="TC_07_AddProductToWishlist.addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_07_AddProductToWishlist@1573f9fc]" name="addprodutToWishlist" class="FrontEndAutomation.TC_07_AddProductToWishlist"/>
-        <method signature="TC_08_removeProductFromWishlist.addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_08_removeProductFromWishlist@10683d9d]" name="addprodutToWishlist" class="FrontEndAutomation.TC_08_removeProductFromWishlist"/>
-        <method signature="TC_09_AddToCartProductFromWishList.addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_09_AddToCartProductFromWishList@682b2fa]" name="addprodutToWishlist" class="FrontEndAutomation.TC_09_AddToCartProductFromWishList"/>
-        <method signature="TC_10_contactUsPage.addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_10_contactUsPage@6989da5e]" name="addprodutToWishlist" class="FrontEndAutomation.TC_10_contactUsPage"/>
-        <method signature="TC_11_WriteAnReviewForProduct.searchProducts()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@217ed35e]" name="searchProducts" class="FrontEndAutomation.TC_11_WriteAnReviewForProduct"/>
+        <method signature="TC_11_WriteAnReviewForProduct.searchProducts()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@4c402120]" name="searchProducts" class="FrontEndAutomation.TC_11_WriteAnReviewForProduct"/>
       </group> <!-- functionality -->
     </groups>
-    <test started-at="2026-10-09T16:06:21 IST" name="Test" finished-at="2026-10-09T16:07:26 IST" duration-ms="65110">
-      <class name="FrontEndAutomation.TC_04_RemoveProductFromCart">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_04_RemoveProductFromCart@3fc2959f]" started-at="2026-10-09T16:06:40 IST" name="setupTest" finished-at="2026-10-09T16:06:41 IST" duration-ms="825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="removePrdFromCart()[pri:0, instance:FrontEndAutomation.TC_04_RemoveProductFromCart@3fc2959f]" started-at="2026-10-09T16:06:41 IST" name="removePrdFromCart" finished-at="2026-10-09T16:06:47 IST" duration-ms="5934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removePrdFromCart -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_04_RemoveProductFromCart@3fc2959f]" started-at="2026-10-09T16:06:47 IST" name="teardownTest" finished-at="2026-10-09T16:06:47 IST" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_04_RemoveProductFromCart -->
-      <class name="FrontEndAutomation.TC_03_AddtoCardProduct">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" started-at="2026-10-09T16:06:47 IST" name="setupTest" finished-at="2026-10-09T16:06:48 IST" duration-ms="833" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="searchProducts()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" started-at="2026-10-09T16:06:48 IST" name="searchProducts" finished-at="2026-10-09T16:06:52 IST" duration-ms="4252" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_03_AddtoCardProduct@5aa9e4eb]" started-at="2026-10-09T16:06:52 IST" name="teardownTest" finished-at="2026-10-09T16:06:52 IST" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_03_AddtoCardProduct -->
-      <class name="FrontEndAutomation.TC_06_checkoutProducts">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_06_checkoutProducts@1f2586d6]" started-at="2026-10-09T16:06:32 IST" name="setupTest" finished-at="2026-10-09T16:06:33 IST" duration-ms="848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="checkoutproducts()[pri:0, instance:FrontEndAutomation.TC_06_checkoutProducts@1f2586d6]" started-at="2026-10-09T16:06:33 IST" name="checkoutproducts" finished-at="2026-10-09T16:06:36 IST" duration-ms="3041" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkoutproducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_06_checkoutProducts@1f2586d6]" started-at="2026-10-09T16:06:36 IST" name="teardownTest" finished-at="2026-10-09T16:06:36 IST" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_06_checkoutProducts -->
-      <class name="FrontEndAutomation.TC_05_updateQuantityFromCart">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_05_updateQuantityFromCart@2f4948e4]" started-at="2026-10-09T16:06:25 IST" name="setupTest" finished-at="2026-10-09T16:06:26 IST" duration-ms="847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="updateQuantityOfPrdFromCart()[pri:0, instance:FrontEndAutomation.TC_05_updateQuantityFromCart@2f4948e4]" started-at="2026-10-09T16:06:26 IST" name="updateQuantityOfPrdFromCart" finished-at="2026-10-09T16:06:32 IST" duration-ms="5412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateQuantityOfPrdFromCart -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_05_updateQuantityFromCart@2f4948e4]" started-at="2026-10-09T16:06:32 IST" name="teardownTest" finished-at="2026-10-09T16:06:32 IST" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_05_updateQuantityFromCart -->
-      <class name="FrontEndAutomation.TC_07_AddProductToWishlist">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_07_AddProductToWishlist@1573f9fc]" started-at="2026-10-09T16:06:21 IST" name="setupTest" finished-at="2026-10-09T16:06:22 IST" duration-ms="1294" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_07_AddProductToWishlist@1573f9fc]" started-at="2026-10-09T16:06:22 IST" name="addprodutToWishlist" finished-at="2026-10-09T16:06:25 IST" duration-ms="2856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addprodutToWishlist -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_07_AddProductToWishlist@1573f9fc]" started-at="2026-10-09T16:06:25 IST" name="teardownTest" finished-at="2026-10-09T16:06:25 IST" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_07_AddProductToWishlist -->
-      <class name="FrontEndAutomation.TC_02_SearchProjects">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" started-at="2026-10-09T16:07:03 IST" name="setupTest" finished-at="2026-10-09T16:07:04 IST" duration-ms="877" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="searchProducts()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" started-at="2026-10-09T16:07:04 IST" name="searchProducts" finished-at="2026-10-09T16:07:07 IST" duration-ms="3208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_02_SearchProjects@385c9627]" started-at="2026-10-09T16:07:07 IST" name="teardownTest" finished-at="2026-10-09T16:07:07 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_02_SearchProjects -->
-      <class name="FrontEndAutomation.TC_10_contactUsPage">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_10_contactUsPage@6989da5e]" started-at="2026-10-09T16:06:52 IST" name="setupTest" finished-at="2026-10-09T16:06:53 IST" duration-ms="840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_10_contactUsPage@6989da5e]" started-at="2026-10-09T16:06:53 IST" name="addprodutToWishlist" finished-at="2026-10-09T16:07:03 IST" duration-ms="10024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addprodutToWishlist -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_10_contactUsPage@6989da5e]" started-at="2026-10-09T16:07:03 IST" name="teardownTest" finished-at="2026-10-09T16:07:03 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_10_contactUsPage -->
-      <class name="FrontEndAutomation.TC_09_AddToCartProductFromWishList">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_09_AddToCartProductFromWishList@682b2fa]" started-at="2026-10-09T16:07:09 IST" name="setupTest" finished-at="2026-10-09T16:07:09 IST" duration-ms="828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_09_AddToCartProductFromWishList@682b2fa]" started-at="2026-10-09T16:07:09 IST" name="addprodutToWishlist" finished-at="2026-10-09T16:07:15 IST" duration-ms="5386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addprodutToWishlist -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_09_AddToCartProductFromWishList@682b2fa]" started-at="2026-10-09T16:07:15 IST" name="teardownTest" finished-at="2026-10-09T16:07:15 IST" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_09_AddToCartProductFromWishList -->
-      <class name="FrontEndAutomation.TC_01_loginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" started-at="2026-10-09T16:07:07 IST" name="setupTest" finished-at="2026-10-09T16:07:08 IST" duration-ms="826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" started-at="2026-10-09T16:07:08 IST" name="loginTest" finished-at="2026-10-09T16:07:08 IST" duration-ms="517" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@139982de]" started-at="2026-10-09T16:07:08 IST" name="teardownTest" finished-at="2026-10-09T16:07:09 IST" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_01_loginTest -->
-      <class name="FrontEndAutomation.TC_08_removeProductFromWishlist">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_08_removeProductFromWishlist@10683d9d]" started-at="2026-10-09T16:06:36 IST" name="setupTest" finished-at="2026-10-09T16:06:37 IST" duration-ms="838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="addprodutToWishlist()[pri:0, instance:FrontEndAutomation.TC_08_removeProductFromWishlist@10683d9d]" started-at="2026-10-09T16:06:37 IST" name="addprodutToWishlist" finished-at="2026-10-09T16:06:40 IST" duration-ms="2889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addprodutToWishlist -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_08_removeProductFromWishlist@10683d9d]" started-at="2026-10-09T16:06:40 IST" name="teardownTest" finished-at="2026-10-09T16:06:40 IST" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-      </class> <!-- FrontEndAutomation.TC_08_removeProductFromWishlist -->
+    <test started-at="2026-10-10T21:04:04 IST" name="Default test" finished-at="2026-10-10T21:04:19 IST" duration-ms="15030">
       <class name="FrontEndAutomation.TC_11_WriteAnReviewForProduct">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@217ed35e]" started-at="2026-10-09T16:07:15 IST" name="setupTest" finished-at="2026-10-09T16:07:16 IST" duration-ms="786" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@4c402120]" started-at="2026-10-10T21:04:04 IST" name="setupTest" finished-at="2026-10-10T21:04:06 IST" duration-ms="1593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="searchProducts()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@217ed35e]" started-at="2026-10-09T16:07:16 IST" name="searchProducts" finished-at="2026-10-09T16:07:26 IST" duration-ms="10323" status="PASS">
+        <test-method signature="searchProducts()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@4c402120]" started-at="2026-10-10T21:04:06 IST" name="searchProducts" finished-at="2026-10-10T21:04:19 IST" duration-ms="13109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProducts -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@217ed35e]" started-at="2026-10-09T16:07:26 IST" name="teardownTest" finished-at="2026-10-09T16:07:26 IST" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_11_WriteAnReviewForProduct@4c402120]" started-at="2026-10-10T21:04:19 IST" name="teardownTest" finished-at="2026-10-10T21:04:19 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
       </class> <!-- FrontEndAutomation.TC_11_WriteAnReviewForProduct -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
