@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FrontEndAutomation.TC_11_WriteAnReviewForProduct">
+      <class name="FrontEndAutomation.TC_01_loginTest">
         <methods>
+          <include name="loginTest"/>
           <include name="setupTest"/>
           <include name="teardownTest"/>
-          <include name="searchProducts"/>
         </methods>
-      </class> <!-- FrontEndAutomation.TC_11_WriteAnReviewForProduct -->
+      </class> <!-- FrontEndAutomation.TC_01_loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

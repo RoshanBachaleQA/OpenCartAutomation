@@ -1,6 +1,5 @@
 package FrontEndAutomation;
 
-import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +10,11 @@ import org.testng.Assert;
 public class BaseClass_openCart {
 	public WebDriver driver;
 	
-	
 	public void setup() {
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
-		driver.get("http://opencart.localhost/");	//launching the Website on browser
-        driver.manage().window().maximize();		//For maximizing the window
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
+		driver.get("http://opencart.localhost:8081/");
+        driver.manage().window().maximize();
         System.out.println("Setup Successful");
 	}
 	
@@ -26,6 +24,7 @@ public class BaseClass_openCart {
 	}
 	
 	public void login(String email, String Password) {
+		
 		driver.findElement(By.linkText("Login")).click();
 		driver.findElement(By.xpath("//input[@name='email' and @id='input-email']")).sendKeys(email);
 		driver.findElement(By.xpath("//input[@id='input-password' and @name='password']")).sendKeys(Password);

@@ -9,9 +9,11 @@ import org.openqa.selenium.WebElement;
 public class HomePageOC {
 	
 	WebDriver driver;
-
+	ExplicitWaitUtility expliwaitvar;
+	
 	HomePageOC(WebDriver driver){
 		this.driver=driver;
+		this.expliwaitvar = new ExplicitWaitUtility(driver, 10);
 	}
 	
 	//Locator 
@@ -33,6 +35,7 @@ public class HomePageOC {
 	
 	//Action methods
 	public void moveToHomePage() {
+		expliwaitvar.waitForElementIsClickable(homepage); //added
 		driver.findElement(homepage).click();
 	}
 	
@@ -77,6 +80,7 @@ public class HomePageOC {
 	}
 	
 	public void clickHeaderMyAccount() {
+		expliwaitvar.waitForElementVisible(myAccountHeader);
 		List<WebElement> links = driver.findElements(myAccountHeader);
 		for(WebElement link:links) {
 			if(link.getText().equals("My Account")) {

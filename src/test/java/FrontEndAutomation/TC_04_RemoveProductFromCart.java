@@ -1,6 +1,7 @@
 package FrontEndAutomation;
 
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,24 +16,29 @@ public class TC_04_RemoveProductFromCart extends BaseClass_openCart{
 	
 	@Test(groups= {"functionality", "regression"})
 	void removePrdFromCart() throws InterruptedException {
-		
-		HomePageOC homepagevar = new HomePageOC(driver);
-		homepagevar.clickHeaderMyAccount();
-		
-		login("roshanbachale328@gmail.com", "Pass@1234$");
-		
-		Thread.sleep(1000);
-		
-		CartPage cartvar = new CartPage(driver);
-		cartvar.clickHeaderCartOption();
-		
-		Thread.sleep(2000);
-		
-		
-		cartvar.clickRemovePrdFromCart();
-		Thread.sleep(2000);
-		
-		System.out.println("-------------  Test Ended  -------------");
+		try {
+
+			HomePageOC homepagevar = new HomePageOC(driver);
+			homepagevar.clickHeaderMyAccount();
+			
+			login("roshanbachale328@gmail.com", "Pass@1234$");
+			
+			Thread.sleep(1000);
+			
+			CartPage cartvar = new CartPage(driver);
+			cartvar.clickHeaderCartOption();
+			
+			Thread.sleep(2000);
+			
+			
+			cartvar.clickRemovePrdFromCart();
+			Thread.sleep(2000);
+			
+			System.out.println("-------------  Test Ended  -------------");
+		}catch(Exception e) {
+			System.out.println("Exception Occured");
+			Assert.fail("Test case Failed: \n"+ e.getMessage());
+		}
 	}
 	
 	@AfterClass
