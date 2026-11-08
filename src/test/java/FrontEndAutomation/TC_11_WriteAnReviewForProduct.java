@@ -1,6 +1,7 @@
 package FrontEndAutomation;
 
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 public class TC_11_WriteAnReviewForProduct extends BaseClass_openCart{
 	
 	@BeforeClass
-	void setupTest() {
+	void setupTest() throws IOException {
 		setup();
 	}
 	

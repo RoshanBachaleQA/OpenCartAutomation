@@ -1,5 +1,7 @@
 package FrontEndAutomation;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,19 +11,20 @@ public class TC_01_loginTest extends BaseClass_openCart {
 
 	
 	@BeforeClass
-	void setupTest() {
+	void setupTest() throws IOException {
 		setup();
 	}
 	
 	
 	@Test(groups={"smoke", "sanity", "regression", "functionality"})
-	void loginTest() {
+	void loginTest(){
 		try {
 
 			HomePageOC homepagevar = new HomePageOC(driver);
 			homepagevar.clickHeaderMyAccount();
 			
 			login("roshanbachale328@gmail.com", "Pass@1234$");
+			
 
 			System.out.println("-------------  Test Ended  -------------");
 		}catch(Exception e) {

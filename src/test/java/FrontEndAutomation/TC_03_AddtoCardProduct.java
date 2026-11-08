@@ -1,6 +1,7 @@
 package FrontEndAutomation;
 
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,7 +15,7 @@ public class TC_03_AddtoCardProduct extends BaseClass_openCart{
 
 	
 	@BeforeClass
-	void setupTest() {
+	void setupTest() throws IOException {
 		setup();
 	}
 	

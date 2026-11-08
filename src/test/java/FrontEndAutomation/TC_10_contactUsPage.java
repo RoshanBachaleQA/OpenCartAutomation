@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class TC_10_contactUsPage extends BaseClass_openCart{
 
 	@BeforeClass
-	void setupTest() {
+	void setupTest() throws IOException {
 		setup();
 	}
 	

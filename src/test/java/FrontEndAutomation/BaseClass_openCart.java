@@ -1,6 +1,11 @@
 package FrontEndAutomation;
 
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,12 +15,22 @@ import org.testng.Assert;
 public class BaseClass_openCart {
 	public WebDriver driver;
 	
-	public void setup() {
+	public void setup() throws IOException {
+		
+		Properties propertyObj=new Properties();
+		FileInputStream file= new FileInputStream(System.getProperty("user.dir") + "\\TestData\\PropertyFile.properties");
+		propertyObj.load(file);
+		
+		
 		driver=new ChromeDriver();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
-		driver.get("http://opencart.localhost:8081/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
+		driver.get(propertyObj.getProperty("url"));
+		
+		
         driver.manage().window().maximize();
         System.out.println("Setup Successful");
+        
+        file.close(); 
 	}
 	
 	public void teardown() {

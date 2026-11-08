@@ -2,54 +2,54 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-03T17:18:56 IST" name="Default suite" finished-at="2026-11-03T17:19:07 IST" duration-ms="10503">
+  <suite started-at="2026-11-06T16:34:09 IST" name="Default suite" finished-at="2026-11-06T16:34:32 IST" duration-ms="22599">
     <groups>
       <group name="regression">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
+        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
+        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
+        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
       </group> <!-- sanity -->
       <group name="functionality">
-        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
+        <method signature="TC_01_loginTest.loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" name="loginTest" class="FrontEndAutomation.TC_01_loginTest"/>
       </group> <!-- functionality -->
     </groups>
-    <test started-at="2026-11-03T17:18:56 IST" name="Default test" finished-at="2026-11-03T17:19:07 IST" duration-ms="10503">
+    <test started-at="2026-11-06T16:34:09 IST" name="Default test" finished-at="2026-11-06T16:34:32 IST" duration-ms="22599">
       <class name="FrontEndAutomation.TC_01_loginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" started-at="2026-11-03T17:18:56 IST" name="setupTest" finished-at="2026-11-03T17:19:06 IST" duration-ms="9926" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" started-at="2026-11-06T16:34:09 IST" name="setupTest" finished-at="2026-11-06T16:34:21 IST" duration-ms="11881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" started-at="2026-11-03T17:19:06 IST" name="loginTest" finished-at="2026-11-03T17:19:07 IST" duration-ms="348" status="FAIL">
+        <test-method signature="loginTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" started-at="2026-11-06T16:34:21 IST" name="loginTest" finished-at="2026-11-06T16:34:31 IST" duration-ms="10410" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test Case Failed: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email' and @id='input-email']"}
-  (Session info: chrome=156.0.8078.80)
+  (Session info: chrome=156.0.8078.81)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80d056d209914c6702bf179274c4e143, findElement {value=//input[@name='email' and @id='input-email'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\ROSHAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64980}, goog:processID: 10328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64980/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 80d056d209914c6702bf179274c4e143]]>
+Command: [93c77b81fefe47553253f8b5fa71fc9f, findElement {value=//input[@name='email' and @id='input-email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.81, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\ROSHAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61404}, goog:processID: 30572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 156.0.8078.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93c77b81fefe47553253f8b5fa71fc9f]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test Case Failed: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='email' and @id='input-email']"}
-  (Session info: chrome=156.0.8078.80)
+  (Session info: chrome=156.0.8078.81)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [80d056d209914c6702bf179274c4e143, findElement {value=//input[@name='email' and @id='input-email'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\ROSHAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64980}, goog:processID: 10328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64980/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 80d056d209914c6702bf179274c4e143
+Command: [93c77b81fefe47553253f8b5fa71fc9f, findElement {value=//input[@name='email' and @id='input-email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.81, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\ROSHAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61404}, goog:processID: 30572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61404/devtoo..., se:cdpVersion: 156.0.8078.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93c77b81fefe47553253f8b5fa71fc9f
 at org.testng.Assert.fail(Assert.java:111)
-at FrontEndAutomation.TC_01_loginTest.loginTest(TC_01_loginTest.java:29)
+at FrontEndAutomation.TC_01_loginTest.loginTest(TC_01_loginTest.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -82,7 +82,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@2d1ef81a]" started-at="2026-11-03T17:19:07 IST" name="teardownTest" finished-at="2026-11-03T17:19:07 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:FrontEndAutomation.TC_01_loginTest@1a677343]" started-at="2026-11-06T16:34:31 IST" name="teardownTest" finished-at="2026-11-06T16:34:32 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->

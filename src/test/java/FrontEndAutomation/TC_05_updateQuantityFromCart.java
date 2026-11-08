@@ -2,6 +2,8 @@ package FrontEndAutomation;
 
 
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,7 +12,7 @@ import org.testng.annotations.Test;
 public class TC_05_updateQuantityFromCart extends BaseClass_openCart{
 
 	@BeforeClass
-	void setupTest() {
+	void setupTest() throws IOException {
 		setup();
 	}
 	
