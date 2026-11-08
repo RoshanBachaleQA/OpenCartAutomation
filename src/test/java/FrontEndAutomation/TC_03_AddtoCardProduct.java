@@ -27,8 +27,8 @@ public class TC_03_AddtoCardProduct extends BaseClass_openCart{
 
 			HomePageOC homePagevar=new HomePageOC(driver);
 			homePagevar.clickHeaderMyAccount();
-			
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 			
 			HomePageOC homevar=new HomePageOC(driver);
 			homevar.moveToHomePage();

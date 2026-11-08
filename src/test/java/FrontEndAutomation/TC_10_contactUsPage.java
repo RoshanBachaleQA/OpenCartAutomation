@@ -19,8 +19,8 @@ public class TC_10_contactUsPage extends BaseClass_openCart{
 		try {
 			HomePageOC homepagevar = new HomePageOC(driver);
 			homepagevar.clickHeaderMyAccount();
-			
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 			
 			Thread.sleep(2000);
 			

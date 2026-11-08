@@ -27,8 +27,7 @@ public class TC_02_SearchProjects extends BaseClass_openCart{
 			homepagevar.clickHeaderMyAccount();
 			
 			//WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-			
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 			
 			HomePageOC homevar=new HomePageOC(driver);
 			homevar.moveToHomePage();

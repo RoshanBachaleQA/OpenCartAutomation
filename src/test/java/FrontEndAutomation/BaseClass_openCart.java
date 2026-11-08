@@ -14,10 +14,11 @@ import org.testng.Assert;
 
 public class BaseClass_openCart {
 	public WebDriver driver;
+	public Properties  propertyObj;
 	
 	public void setup() throws IOException {
 		
-		Properties propertyObj=new Properties();
+		propertyObj=new Properties();
 		FileInputStream file= new FileInputStream(System.getProperty("user.dir") + "\\TestData\\PropertyFile.properties");
 		propertyObj.load(file);
 		

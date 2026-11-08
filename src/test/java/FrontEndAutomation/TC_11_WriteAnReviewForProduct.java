@@ -23,8 +23,8 @@ public class TC_11_WriteAnReviewForProduct extends BaseClass_openCart{
 		try {
 			HomePageOC homepagevar=new HomePageOC(driver);
 			homepagevar.clickHeaderMyAccount();
-		
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 			
 			Thread.sleep(1000);
 			

@@ -24,8 +24,8 @@ public class TC_05_updateQuantityFromCart extends BaseClass_openCart{
 
 			HomePageOC homePagevar=new HomePageOC(driver);
 			homePagevar.clickHeaderMyAccount();
-			
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 
 			Thread.sleep(2000);
 			

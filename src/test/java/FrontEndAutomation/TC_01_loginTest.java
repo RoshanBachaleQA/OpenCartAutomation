@@ -23,9 +23,8 @@ public class TC_01_loginTest extends BaseClass_openCart {
 			HomePageOC homepagevar = new HomePageOC(driver);
 			homepagevar.clickHeaderMyAccount();
 			
-			login("roshanbachale328@gmail.com", "Pass@1234$");
+			login(propertyObj.getProperty("email"), propertyObj.getProperty("password"));
 			
-
 			System.out.println("-------------  Test Ended  -------------");
 		}catch(Exception e) {
 			System.out.println("Exception Occurs :- " + e);
